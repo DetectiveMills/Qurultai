@@ -35,16 +35,13 @@ header{
     font-weight: 700;
 }
 .banner{
+    background-image: url(../images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     color: white;
     padding-top: 80px;
 }
-.banner_image img {
-    width: 100%;
-}
-
 .banner_content{
     height: 600px;
 }
@@ -246,3 +243,8 @@ footer{
     height: 0 !important;
     
 } 
+
+
+.logo_image{
+    height: 50px;
+}

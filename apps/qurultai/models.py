@@ -6,10 +6,6 @@ class Settings(models.Model):
         upload_to="logo/",
         verbose_name="Логотип сайта"
     )
-    banner = models.ImageField(
-        upload_to="banner/",
-        verbose_name="Баннер сайта"
-    )
     title = models.CharField(
         max_length=200,
         verbose_name="Заголовок"
@@ -27,8 +23,21 @@ class Settings(models.Model):
         verbose_name="Текст для второго заголовка",
         null=True,
     )
-    description = models.TextField(
-        verbose_name="Что за изменение?"
+    title_end = models.CharField(
+        max_length=50,
+        verbose_name="Текст в конце",
+    )
+    phone_number = models.CharField(
+        max_length=50,
+        verbose_name="Номер телефона"
+    )
+    email = models.CharField(
+        max_length=50,
+        verbose_name="Почта"
+    )
+    description = models.CharField(
+        max_length=50,
+        verbose_name="Название компании"
     )
 
     def __str__(self):

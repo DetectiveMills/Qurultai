@@ -14,7 +14,7 @@
 <body>
     <header class="container">
         <div class="logo">
-            <img src="{{ settings.logo.url }}" alt="">
+            <img class="logo_image" src="{{ settings.logo.url }}" alt="">
         </div>
         <div class="menu">
             <div class="menu_block">
@@ -31,9 +31,6 @@
 
     <main>
         <section class="banner">
-            <div class="banner_image">
-                <img src="{{ settings.banner.url }}" alt="Banner">
-            </div>
             <div class="banner_content container">
                 <h1>
                     {{ settings.title }}
@@ -163,19 +160,19 @@
 
             <div class="footer_block">
                 <div class="logo">
-                    <img src="{% static 'assets/images/whitelogo.png'%}" alt="">
+                    <img class='logo_image' src="{{ settings.logo.url }}" alt="">
 
                     <p>
-                        "Экоединство Кыргызстана: <br> Вместе к Зелёному Будущему!"
+                        {{ settings.title_end }}
 
                     </p>
 
                     <p>
-                        +996 551987589
+                        {{ settings.phone_number }}
                     </p>
 
                     <p>
-                        lordbawhee@gmail.com
+                        {{ settings.email }}
                     </p>
                 </div>
 
@@ -202,7 +199,7 @@
         </div>
         <div class="line container"></div>
 
-        <p class="container" style="margin-top: 30px;"> EcoQurultay eCommerce © 2023. All Rights Reserved</p>
+        <p class="container" style="margin-top: 30px;"> {{ settings.description }} © 2024. All Rights Reserved</p>
     </footer>
 
 
